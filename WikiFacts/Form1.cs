@@ -16,5 +16,13 @@ namespace WikiFacts
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            WikiRequest wr = new WikiRequest();
+            string wa = wr.getArticle(0, 0);
+            MessageBox.Show(wa);
+            MessageBox.Show(WikiParser.parseJson(wa).extract);
+        }
     }
 }
