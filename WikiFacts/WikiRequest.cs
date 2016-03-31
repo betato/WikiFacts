@@ -12,10 +12,10 @@ namespace WikiFacts
     {
         private const string REQUEST_URL_START = "https://en.wikipedia.org/w/api.php?action=query";
         private const string REQUEST_URL_END = "&prop=extracts&format=json";
-        private const string RANDOM_PARAMETER = "&generator=random";
+        private const string RANDOM_PARAMETER = "&generator=random&grnnamespace=0";
         private const string PAGEID_PARAMETER = "&pageids=";
         private const string MAX_CHARS_PARAMETER = "&exchars=";
-
+              
         public string getArticle(int pageid, int maxChars)
         {
             // Make webrequest
