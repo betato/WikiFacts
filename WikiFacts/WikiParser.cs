@@ -18,7 +18,7 @@ namespace WikiFacts
         private const string EXTRACT_STRING = "\",\"extract\":\"";
         private const string END_STRING = "\"";
 
-        public static WikiArticle parseJson(string json)
+        public static WikiArticle ParseJson(string json)
         {
             string[] splitString = new string[6];
 

@@ -20,7 +20,7 @@ namespace WikiFacts
         private void Form1_Load(object sender, EventArgs e)
         {
             WikiRequest wr = new WikiRequest();
-            WikiArticle wa = WikiParser.parseJson(wr.getArticle(0, 0));
+            WikiArticle wa = WikiParser.ParseJson(wr.GetArticle(0, 0));
 
             foreach (string s in wa.extract)
             {

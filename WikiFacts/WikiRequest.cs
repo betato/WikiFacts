@@ -16,10 +16,10 @@ namespace WikiFacts
         private const string PAGEID_PARAMETER = "&pageids=";
         private const string MAX_CHARS_PARAMETER = "&exchars=";
               
-        public string getArticle(int pageid, int maxChars)
+        public string GetArticle(int pageid, int maxChars)
         {
             // Make webrequest
-            WebRequest request = WebRequest.Create(getUrl(pageid, maxChars));
+            WebRequest request = WebRequest.Create(GetUrl(pageid, maxChars));
             WebResponse response = request.GetResponse();
             Stream data = response.GetResponseStream();
 
@@ -32,7 +32,7 @@ namespace WikiFacts
             return json;
         }
 
-        private string getUrl(int pageid, int maxChars)
+        private string GetUrl(int pageid, int maxChars)
         {
             string url = REQUEST_URL_START;
             if (pageid <= 0)

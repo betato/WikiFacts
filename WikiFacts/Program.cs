@@ -27,43 +27,43 @@ namespace WikiFacts
                 {
                     case "-s":
                         // Fullscreen mode
-                        run();
+                        Run();
                         break;
 
                     case "-c":
                         // Configuration mode
-                        config();
+                        Config();
                         break;
 
                     case "-p":
                         // Preview mode
-                        preview();
+                        Preview();
                         break;
 
                     default:
                         // Unknown argument
-                        run();
+                        Run();
                         break;
                 }
             }
             else
             {
                 // No arguments
-                config();
+                Config();
             }
         }
 
-        public static void run()
+        public static void Run()
         {
             
         }
 
-        public static void preview()
+        public static void Preview()
         { 
 
         }
 
-        public static void config()
+        public static void Config()
         {
             // Open configuration window
             Application.Run(new Form1());
