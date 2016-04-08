@@ -55,7 +55,9 @@ namespace WikiFacts
 
         public static void Run()
         {
-            
+            // Open screensaver window
+            Display display = new Display();
+            display.Run();
         }
 
         public static void Preview()
